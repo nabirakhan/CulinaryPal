@@ -1,0 +1,103 @@
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial'; /* Use Montserrat for the entire body */
+    background-color: #e5d3b3; /* Background color for the entire body */
+}
+
+header {
+    background-color: #987554; /* Header background color */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    color: rgb(235, 217, 194); 
+    font-family: 'Montserrat';
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #987554; /* Footer background color */
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+/* Recipe content style */
+.recipe-item h2 {
+    color: #664229; /* Recipe title color */
+    font-family: 'arial'; 
+    font-weight: bold; 
+}
+
+
+/* Recipe details style */
+#recipe-details {
+    background-color: #d2b48c; /* Recipe details background color */
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#recipe-details h2 {
+    color: #664229; /* Recipe details title color */
+    font-family: 'Arial';  
+    font-weight: bold; 
+}
+
+#recipe-details h3 {
+    color: #664229; /* Recipe details subtitle color */
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+#recipe-details p {
+    color: #85674b; /* Recipe details text color */
+    font-family: 'Roboto'; /* Use Montserrat for descriptions */
+}
+
+/* Styling for the recipe image */
+.recipe-image {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: 200px; /* Set a fixed height for all images */
+    width: 100%; /* Make sure the image takes 100% of the container width */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    display: block; /* Remove any default spacing below the image */
+    margin: 0 auto; /* Center the image */
+    border: 5px solid #664229; /* Add a 5px solid dark brown border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Recipe rating styling */
+#recipe-rating {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add some space below the stars */
+}
+
+#recipe-rating span {
+    cursor: pointer;
+    color: rgb(154, 132, 54); /* Golden color for unrated stars */
+    margin-right: 5px; /* Add some space between the stars */
+}
+
+#recipe-rating span:hover,
+#recipe-rating span:hover ~ span,
+#recipe-rating span.selected,
+#recipe-rating span.selected ~ span {
+    color: #816c50; /* Light brown color for rated stars */
+}
